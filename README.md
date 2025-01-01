@@ -1,12 +1,12 @@
 # Ducky2Exe
-This project allows you to convert Duckyscript (scripts for USB Rubber Ducky) into Python code that uses the pyautogui library to simulate key presses and then compile it into an .exe executable file using the cx_Freeze library (or an alternative, not using PyInstaller).
+This project allows you to convert Duckyscript (scripts for USB Rubber Ducky) into Python code that uses the pyautogui library to simulate key presses and then compile it into an .exe executable file using the PyInstaller library.
 
 ⚠️ Recommended: Download the .exe Version
 If you prefer not to go through the setup process, you can download the precompiled .exe version of the program from the Releases Page.
 
 ## Features
 Convert Duckyscript to Python: Converts Duckyscript commands into equivalent Python code using the pyautogui library to simulate key presses.
-Create an Executable: After converting to Python, the script can be compiled into an .exe executable file using cx_Freeze (or other compilers, not PyInstaller).
+Create an Executable: After converting to Python, the script can be compiled into an .exe executable file using PyInstaller.
 Simple GUI: The program provides a graphical interface for selecting a Duckyscript file, generating Python code, and compiling it into an .exe file.
 
 ## Installation
@@ -16,6 +16,7 @@ Clone or download the repository:
 Download or clone the project from GitHub:
 
 git clone https://github.com/nazarhktwitch/Ducky2Exe
+
 cd Ducky2Exe
 
 ## Install dependencies:
@@ -28,7 +29,7 @@ The requirements.txt file includes the following dependencies:
 
 pyautogui — for simulating key presses.
 PySide6 — for creating the graphical interface.
-cx_Freeze — for compiling the Python script into an executable file.
+PyInstaller — for compiling the Python script into an executable file.
 
 If you don't have PySide6, you can install it using:
 
@@ -77,7 +78,7 @@ Once the Python code is generated, you can compile it into an .exe executable fi
 
 ## Requirements
 Python 3.x
-cx_Freeze (for compiling)
+PyInstaller (for compiling)
 pyautogui (for simulating key presses)
 PySide6 (for graphical interface)
 ## Notes
