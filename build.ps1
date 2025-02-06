@@ -1,5 +1,7 @@
 # Build by NazarHK (nazarhktwitch)
 
+# Note: Run this script with elevated permissions to avoid permission issues
+
 # Install requirements first if needed
 pip install -r requirements.txt
 pip install pyinstaller
