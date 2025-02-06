@@ -309,11 +309,11 @@ class Ducky2ExeApp(QMainWindow):
             elif line.startswith("DELAY"):
                 # Convert delays with minimum validation
                 try:
-                    delay_time = validate_delay(int(line[6:].strip())) / 1000  # Fixed typo: .trip() -> .strip()
+                    delay_time = validate_delay(int(line[6:].strip())) / 1000
                     commands.append(f"time.sleep({delay_time})")
                 except ValueError:
                     # Try to handle variable delay
-                    var_name = line[6:].trip()
+                    var_name = line[6:].strip()
                     if var_name.startswith('$'):
                         commands.append(f"time.sleep(max(0.02, {var_name.replace('$', '_var_')}/1000))")
                     else:

@@ -1,92 +1,111 @@
-# Ducky2Exe
-This project allows you to convert Duckyscript (scripts for USB Rubber Ducky) into Python code that uses the pyautogui library to simulate key presses and then compile it into an .exe executable file using the PyInstaller library.
+# Ducky2Python Converter
 
-⚠️ Recommended: Download the .exe Version
-If you prefer not to go through the setup process, you can download the precompiled .exe version of the program from the Releases Page.
+A GUI application that converts DuckyScript to Python code and creates executable files. This tool allows you to take DuckyScript payloads and convert them into standalone Python programs or executables.
+
+## Quick Start ⚡
+
+Don't want to install Python and requirements? Download the ready-to-use executable:
+[Download Latest Release](https://github.com/nazarhktwitch/Ducky2Exe/releases)
 
 ## Features
-Convert Duckyscript to Python: Converts Duckyscript commands into equivalent Python code using the pyautogui library to simulate key presses.
-Create an Executable: After converting to Python, the script can be compiled into an .exe executable file using PyInstaller.
-Simple GUI: The program provides a graphical interface for selecting a Duckyscript file, generating Python code, and compiling it into an .exe file.
+
+- 🖥️ User-friendly GUI interface
+- 🔄 Real-time conversion of DuckyScript to Python
+- 📦 Export as Python script (.py) or executable (.exe)
+- ⌨️ Supports extensive keyboard commands
+- 🔒 Lock key state detection and control
+- 🎲 Random character generation
+- ⏱️ Delay and timing controls
+- 🔁 Loop and function support
+- 💾 Variable and constant handling
 
 ## Installation
 
-Clone or download the repository:
-
-Download or clone the project from GitHub:
-
-git clone https://github.com/nazarhktwitch/Ducky2Exe
-
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/Ducky2Exe.git
 cd Ducky2Exe
+```
 
-## Install dependencies:
-
-Make sure you have Python 3.x installed. Then install the required libraries:
-
+2. Install requirements:
+```bash
 pip install -r requirements.txt
-
-The requirements.txt file includes the following dependencies:
-
-pyautogui — for simulating key presses.
-PySide6 — for creating the graphical interface.
-PyInstaller — for compiling the Python script into an executable file.
-
-If you don't have PySide6, you can install it using:
-
-pip install pyside6
-
-Install cx_Freeze (if not already installed):
-
-pip install cx_Freeze
+```
 
 ## Usage
 
-Run the application:
-
-After installing the dependencies, you can start the application by running:
-
+1. Run the application:
+```bash
 python Ducky2Exe.py
+```
 
-## How it works:
+2. Paste your DuckyScript code into the input field
+3. Click "Convert to Python" to generate Python code
+4. Click "Download exe" to create an executable
 
-Select Duckyscript file: Click the "Select Duckyscript File" button to choose your Duckyscript file.
+## Supported Commands
 
-Convert to Python: The script will be converted into Python code, which you can save.
+### Basic Keys
+- All standard keyboard keys
+- Function keys (F1-F12)
+- Special keys (CTRL, ALT, SHIFT, GUI/WINDOWS)
+- Media and volume controls
 
-Compile to .exe: Afterward, you can compile the Python code into an .exe executable file.
+### Special Commands
+- DELAY - Add timing delays
+- STRING/STRINGLN - Text input
+- REM/REM_BLOCK - Comments
+- REPEAT - Command repetition
+- FUNCTION - Custom functions
+- IF/ELSE/WHILE - Control structures
+- Variables and constants
 
-## Graphical Interface:
+### Advanced Features
+- Lock key monitoring (CAPSLOCK, NUMLOCK, SCROLLLOCK)
+- Random character generation
+- Key holding and releasing
+- Button and LED controls
+- Attack mode configuration
 
-The GUI has buttons for file selection, Python code generation, and compilation. You will also find a link to the project's GitHub repository in the bottom-right corner.
+## Example
 
-## Example Duckyscript (input.txt):
-
-DELAY 1000
-STRING Hello, world!
+```ducky
+REM Open Notepad and type a message
+DELAY 500
+GUI r
+DELAY 100
+STRING notepad
 ENTER
-
-Generated Python code:
-
-import pyautogui
-import time
-
-time.sleep(1)
-pyautogui.write('Hello, world!')
-pyautogui.press('enter')
-Compiling to .exe
-Once the Python code is generated, you can compile it into an .exe executable file using cx_Freeze. Simply select the file and click "Compile to .exe."
+DELAY 1000
+STRING Hello from Ducky2Python!
+ENTER
+STRING This script was converted using Ducky2Python Converter.
+```
 
 ## Requirements
-Python 3.x
-PyInstaller (for compiling)
-pyautogui (for simulating key presses)
-PySide6 (for graphical interface)
-## Notes
-The Ducky2Exe.py script currently does not handle more complex Duckyscript commands or commands with parameters. These features may be added in the future.
-Make sure you have administrator rights if you are compiling executable files on Windows.
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Author: NazarHK
-GitHub: https://github.com/nazarhktwitch
-Discord: https://discord.gg/ZuA8jVjNvv
+- Python 3.7+
+- PySide6
+- PyAutoGUI
+- keyboard
+- cx_Freeze (for executable creation)
+
+## Building from Source
+
+Build executable using PyInstaller:
+```bash
+pyinstaller --noconfirm --onefile --windowed --icon="icon.png" --name="Ducky2Python" --add-data="icon.png;." --hidden-import=PySide6 --hidden-import=pyautogui --hidden-import=keyboard --collect-all=PySide6 --collect-all=pyautogui --collect-all=keyboard --clean Ducky2Exe.py
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Feel free to submit issues, fork the repository and create pull requests for any improvements.
+
+## Acknowledgments
+
+- Thanks to the Hak5 team for the DuckyScript specification
+- Special thanks to all users
