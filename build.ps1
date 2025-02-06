@@ -15,6 +15,9 @@ pyinstaller --noconfirm --onefile --windowed `
     --collect-all=PySide6 `
     --collect-all=pyautogui `
     --collect-all=keyboard `
+    --exclude-module=PyQt5 `
+    --exclude-module=PyQt6 `
+    --exclude-module=PySide2 `
     --clean `
     --log-level=WARN `
     Ducky2Exe.py
