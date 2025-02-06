@@ -9,7 +9,7 @@ pip install pyinstaller
 # Main PyInstaller command
 pyinstaller --noconfirm --onefile --windowed `
     --icon="icon.png" `
-    --name="Ducky2Python" `
+    --name="Ducky2Exe" `
     --add-data="icon.png;." `
     --hidden-import=PySide6 `
     --hidden-import=pyautogui `

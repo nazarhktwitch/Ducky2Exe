@@ -14,7 +14,7 @@ class Ducky2ExeApp(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Ducky2Python Converter")
+        self.setWindowTitle("Ducky2Exe")
         self.setGeometry(100, 100, 800, 600)
         self.setWindowIcon(QIcon("icon.png")) # You can change the icon to your own
 
