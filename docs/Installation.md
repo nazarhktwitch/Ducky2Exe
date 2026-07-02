@@ -30,7 +30,7 @@ Build executable using PyInstaller:
 pyinstaller --noconfirm --onefile --windowed --icon="icon.png" --name="Ducky2Python" --add-data="icon.png;." --hidden-import=PySide6 --hidden-import=pyautogui --hidden-import=keyboard --collect-all=PySide6 --collect-all=pyautogui --collect-all=keyboard --clean Ducky2Exe.py
 ```
 
-## Quick Start ⚡
+## Quick Start
 
 Don't want to install Python and requirements? Download the ready-to-use executable:
 [Download Latest Release](https://github.com/nazarhktwitch/Ducky2Exe/releases)
