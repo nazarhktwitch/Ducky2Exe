@@ -2,28 +2,28 @@
 
 A GUI application that converts DuckyScript to Python code and creates executable files. This tool allows you to take DuckyScript payloads and convert them into standalone Python programs or executables.
 
-## Quick Start ⚡
+## Quick Start
 
 Don't want to install Python and requirements? Download the ready-to-use executable:
 [Download Latest Release](https://github.com/nazarhktwitch/Ducky2Exe/releases)
 
 ## Features
 
-- 🖥️ User-friendly GUI interface
-- 🔄 Real-time conversion of DuckyScript to Python
-- 📦 Export as Python script (.py) or executable (.exe)
-- ⌨️ Supports extensive keyboard commands
-- 🔒 Lock key state detection and control
-- 🎲 Random character generation
-- ⏱️ Delay and timing controls
-- 🔁 Loop and function support
-- 💾 Variable and constant handling
+- User-friendly GUI interface
+- Real-time conversion of DuckyScript to Python
+- Export as Python script (.py) or executable (.exe)
+- Supports extensive keyboard commands
+- Lock key state detection and control
+- Random character generation
+- Delay and timing controls
+- Loop and function support
+- Variable and constant handling
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Ducky2Exe.git
+git clone https://github.com/nazarhktwitch/Ducky2Exe.git
 cd Ducky2Exe
 ```
 
