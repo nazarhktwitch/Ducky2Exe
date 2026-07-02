@@ -6,15 +6,15 @@ Ducky2Python Converter is a GUI application that converts DuckyScript to Python 
 
 ## Features
 
-- 🖥️ User-friendly GUI interface
-- 🔄 Real-time conversion of DuckyScript to Python
-- 📦 Export as Python script (.py) or executable (.exe)
+- User-friendly GUI interface
+- Real-time conversion of DuckyScript to Python
+- Export as Python script (.py) or executable (.exe)
 - ⌨️ Supports extensive keyboard commands
-- 🔒 Lock key state detection and control
-- 🎲 Random character generation
-- ⏱️ Delay and timing controls
-- 🔁 Loop and function support
-- 💾 Variable and constant handling
+- Lock key state detection and control
+- Random character generation
+- Delay and timing controls
+- Loop and function support
+- Variable and constant handling
 
 ## Supported Commands
 
